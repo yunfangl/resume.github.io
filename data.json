@@ -1,0 +1,215 @@
+{
+  "personalInfo": {
+    "name": "林晓薇",
+    "jobTarget": "前端开发专家 / 前端架构师",
+    "summary": "5年前端开发经验，专注复杂业务系统架构与性能优化，具备从0到1技术体系建设能力。擅长Vue生态、TypeScript工程化、微前端架构，主导多个大型项目性能优化与团队技术升级。",
+    "contact": {
+      "phone": "13800138000",
+      "email": "frontend.dev@example.com",
+      "github": "https://github.com/example-frontend",
+      "blog": "https://blog.frontend-tech.com"
+    }
+  },
+  "coreProjects": [
+    {
+      "name": "智能制造ERP系统重构",
+      "link": "https://erp.smartfactory.com",
+      "period": "2022.08-2023.12",
+      "role": "前端负责人 / 架构师",
+      "description": "为大型智能制造企业重构的数字化管理平台，替代原有12+独立系统，实现生产全流程数字化管理。",
+      "challenges": [
+        {
+          "problem": "单体应用6年历史代码，编译时间4min+，团队协作效率低下",
+          "solution": "主导微前端架构改造，基于qiankun按业务域拆分8个子应用",
+          "result": "编译时间↓80%，独立部署，团队并行开发效率↑45%"
+        },
+        {
+          "problem": "生产数据模块10w+数据行表格渲染，页面卡顿严重",
+          "solution": "虚拟滚动 + Web Worker计算 + Canvas渲染优化",
+          "result": "FPS稳定在60，内存占用↓75%，用户体验评分大幅提升"
+        },
+        {
+          "problem": "300+业务表单重复开发，维护困难，代码复用率低",
+          "solution": "设计JSON Schema表单配置系统 + 可视化表单设计器",
+          "result": "开发效率↑350%，代码复用率90%+，维护成本↓70%"
+        }
+      ],
+      "techStack": ["Vue 3 + Composition API", "TypeScript", "微前端(qiankun)", "Vite", "Pinia状态管理", "ECharts大数据可视化"],
+      "results": [
+        { "value": "68%", "label": "系统响应时间优化" },
+        { "value": "45%", "label": "团队开发效率提升" },
+        { "value": "65%", "label": "线上Bug率降低" },
+        { "value": "350%", "label": "表单开发效率提升" }
+      ],
+      "isCore": true
+    },
+    {
+      "name": "智慧医疗管理系统",
+      "link": "https://medical.smarthealth.com",
+      "period": "2021.03-2022.07",
+      "role": "核心开发工程师 / 架构师",
+      "description": "面向三甲医院的智慧医疗管理平台，支持电子病历、药品管理、医患互动等核心功能，日均访问量50万+。",
+      "challenges": [
+        {
+          "problem": "医疗数据安全性要求极高，传统方案存在泄露风险",
+          "solution": "设计前端数据加密方案 + 水印系统 + 操作日志追溯",
+          "result": "通过医疗安全等级测评，0数据泄露事件"
+        },
+        {
+          "problem": "复杂病历表单验证逻辑混乱，代码维护困难",
+          "solution": "基于TypeScript实现类型安全的表单验证引擎",
+          "result": "验证逻辑代码量↓55%，维护效率↑220%"
+        },
+        {
+          "problem": "医疗影像加载缓慢，用户体验差",
+          "solution": "图片懒加载 + WebP格式转换 + CDN加速",
+          "result": "影像加载时间从5s→0.8s，用户满意度提升40%"
+        }
+      ],
+      "techStack": ["React 18 + Hooks", "TypeScript", "Ant Design Pro", "Redux Toolkit", "WebRTC视频会诊", "WebSocket实时通信"],
+      "results": [
+        { "value": "99.99%", "label": "系统可用性" },
+        { "value": "80%", "label": "影像加载优化" },
+        { "value": "220%", "label": "维护效率提升" },
+        { "value": "0", "label": "数据安全事故" }
+      ],
+      "isCore": true
+    },
+    {
+      "name": "智慧园区物联网平台",
+      "link": "https://iot.smartpark.com",
+      "period": "2020.11-2021.10",
+      "role": "前端技术负责人",
+      "description": "基于物联网的智慧园区管理平台，实时监测5000+设备状态，异常实时预警，实现园区智能化管理。",
+      "challenges": [
+        {
+          "problem": "实时数据量大（5000+设备/s），传统轮询方案压力大",
+          "solution": "WebSocket + 数据聚合 + 增量更新策略",
+          "result": "服务器压力↓85%，数据传输量优化70%"
+        },
+        {
+          "problem": "园区设备定位精度要求高，传统地图方案不满足",
+          "solution": "Mapbox GL + 自定义图层 + 实时轨迹渲染",
+          "result": "定位精度提升至0.3米，轨迹渲染流畅60FPS"
+        },
+        {
+          "problem": "移动端监测App性能差，耗电量大",
+          "solution": "PWA技术 + 离线缓存 + 后台同步",
+          "result": "首屏加载时间1.1s，离线可用性100%，电量消耗↓45%"
+        }
+      ],
+      "techStack": ["Vue.js + Vuex", "WebSocket实时通信", "Mapbox GL地理可视化", "ECharts大数据展示", "PWA离线应用", "Three.js 3D可视化"],
+      "results": [
+        { "value": "85%", "label": "服务器压力降低" },
+        { "value": "0.3米", "label": "定位精度" },
+        { "value": "60FPS", "label": "实时渲染帧率" },
+        { "value": "45%", "label": "移动端电量优化" }
+      ],
+      "isCore": true
+    }
+  ],
+  "workExperience": [
+    {
+      "company": "数科科技有限公司",
+      "position": "高级前端开发工程师 → 前端技术负责人",
+      "period": "2022.03-至今",
+      "promotion": "2023.06晋升技术负责人",
+      "responsibilities": "负责公司前端技术体系建设，带领12人前端团队，主导技术选型、架构设计和工程化落地，推动团队技术升级。",
+      "achievements": [
+        "建立完整的前端工程化体系：CI/CD流水线、代码规范、组件库、监控体系",
+        "主导微前端架构落地，解决6年历史单体应用的技术债务问题",
+        "建立技术分享文化，团队整体技术水平显著提升",
+        "推动TypeScript全面落地，类型覆盖率从10%提升至95%+",
+        "建立新人培养体系，8名新人4个月内具备独立开发能力",
+        "主导性能优化专项，核心产品性能指标提升60%+"
+      ]
+    },
+    {
+      "company": "云创科技集团",
+      "position": "前端开发工程师 → 高级前端工程师",
+      "period": "2020.09-2022.02",
+      "promotion": "2021.06晋升高级工程师",
+      "responsibilities": "参与多个大型企业级项目开发，负责复杂业务模块设计与实现，开始承担技术决策职责，指导初级工程师。",
+      "achievements": [
+        "主导性能优化专项，将核心产品首屏加载时间从3.5s优化至1.3s",
+        "设计并实现企业级组件库，团队代码复用率从25%提升至75%",
+        "建立Code Review机制，代码质量评分显著提升",
+        "培养3名初级工程师，指导其掌握复杂业务开发能力",
+        "建立前端监控体系，线上问题平均发现时间从2小时降至10分钟",
+        "参与技术选型，推动团队技术栈现代化升级"
+      ]
+    },
+    {
+      "company": "智软科技有限公司",
+      "position": "前端开发工程师",
+      "period": "2019.06-2020.08",
+      "responsibilities": "负责公司产品前端开发，快速学习业务，建立工程化思维，培养解决问题的能力，完成多个中型项目开发。",
+      "achievements": [
+        "从0到1独立完成4个中型项目前端架构设计与开发",
+        "主导响应式设计规范，移动端适配评分达98+",
+        "建立前端构建优化方案，打包时间缩短65%",
+        "参与产品需求评审，提出15+技术优化建议被采纳",
+        "建立开发文档体系，新人上手时间从3周缩短至5天",
+        "独立解决多个复杂技术难题，获得团队技术标兵称号"
+      ]
+    }
+  ],
+  "otherProjects": [
+    {
+      "name": "企业数字化官网重构",
+      "link": "https://www.digital-company.com",
+      "description": "现代化响应式企业官网，支持多语言切换、SEO优化、内容管理系统集成，展示企业数字化能力。",
+      "techStack": ["Next.js", "TypeScript", "Tailwind CSS", "GraphQL", "Headless CMS", "SSR渲染"],
+      "result": "性能评分98+，SEO流量提升250%，多语言支持8种，首屏加载时间1.2s"
+    },
+    {
+      "name": "在线教育平台",
+      "link": "https://edu.online-learning.com",
+      "description": "一站式在线教育平台，支持直播授课、在线考试、作业提交、学习社区等功能，服务10万+学员。",
+      "techStack": ["Vue.js", "Vant UI", "WebRTC直播", "WebSocket即时通讯", "PWA", "IndexedDB"],
+      "result": "日活跃用户5万+，课程完成率提升35%，用户满意度4.8/5.0"
+    },
+    {
+      "name": "电商营销中台",
+      "link": "https://marketing.ecommerce.com",
+      "description": "电商营销活动管理平台，支持优惠券、拼团、秒杀、分销等营销功能，日均处理订单50万+。",
+      "techStack": ["Vue 2", "Element UI", "微信生态", "Redis缓存", "WebSocket", "微服务架构"],
+      "result": "日活用户8万+，营销活动转化率18%，峰值QPS支持10万+"
+    },
+    {
+      "name": "智能客服系统",
+      "link": "https://service.ai-chat.com",
+      "description": "基于AI的智能客服系统，支持机器人客服、人工坐席、工单管理、数据分析等功能。",
+      "techStack": ["Vue.js", "WebRTC", "WebSocket", "Element UI", "Agora SDK", "AI集成"],
+      "result": "客服效率提升60%，用户问题解决率85%，支撑5万+并发会话"
+    },
+    {
+      "name": "智慧停车小程序",
+      "link": "https://parking.smart-city.com",
+      "description": "城市级智慧停车平台，支持车位查询、预约停车、无感支付、电子发票等功能，覆盖500+停车场。",
+      "techStack": ["微信小程序", "Vant Weapp", "云开发", "支付体系", "地图API", "物联网"],
+      "result": "覆盖500+停车场，月交易额800万+，用户日活3万+"
+    },
+    {
+      "name": "数据可视化大屏",
+      "link": "https://dashboard.bigdata.com",
+      "description": "企业级数据可视化大屏，支持实时数据展示、多维度分析、预警监控、数据导出等功能。",
+      "techStack": ["ECharts", "D3.js", "Vue.js", "WebSocket", "Canvas渲染", "大数据处理"],
+      "result": "支持百万级数据实时渲染，渲染性能提升80%，客户满意度95%+"
+    },
+    {
+      "name": "移动办公协同平台",
+      "link": "https://oa.mobile-work.com",
+      "description": "企业移动办公协同平台，支持审批流程、任务管理、即时通讯、文档协同等功能，服务200+企业。",
+      "techStack": ["React Native", "Redux", "WebSocket", "原生模块", "推送通知", "离线同步"],
+      "result": "App Store评分4.7，日活跃企业用户10万+，消息送达率99.9%"
+    },
+    {
+      "name": "供应链管理系统",
+      "link": "https://scm.supply-chain.com",
+      "description": "全流程供应链管理平台，支持供应商管理、采购管理、库存管理、物流跟踪等功能。",
+      "techStack": ["Angular", "RxJS", "Ng-Zorro", "微前端", "Web Worker", "大数据表格"],
+      "result": "供应链效率提升40%，库存周转率提升30%，错误率降低75%"
+    }
+  ]
+}

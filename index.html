@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>林晓薇 - 前端开发专家 / 前端架构师</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<!-- 下载按钮 -->
+<div class="download-fab">
+    <button id="downloadPdfBtn" class="download-btn" title="下载PDF简历">
+        <i class="fas fa-download"></i>
+        <span>下载简历</span>
+    </button>
+</div>
+
+<div class="resume-wrapper">
+    <!-- 左侧个人信息区域 -->
+    <aside class="sidebar">
+        <div class="profile-section">
+            <div class="profile-header">
+                <div class="avatar">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <div class="profile-info">
+                    <h1 class="name">林晓薇</h1>
+                    <div class="title-tags">
+                        <span class="title-tag primary">前端开发专家</span>
+                        <span class="title-tag">前端架构师</span>
+                        <span class="title-tag">技术负责人</span>
+                    </div>
+                    <p class="profile-summary">5年前端开发经验，专注复杂业务系统架构与性能优化，具备从0到1技术体系建设能力，主导多个大型企业级项目重构与团队技术升级。</p>
+                </div>
+            </div>
+
+            <!-- 基本信息 -->
+            <div class="info-section">
+                <h3 class="section-title">
+                    <i class="fas fa-user-tie"></i>
+                    个人信息
+                </h3>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <span class="info-label">工作年限</span>
+                        <span class="info-value">5年</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">当前状态</span>
+                        <span class="info-value highlight">在职，考虑新机会</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">期望职位</span>
+                        <span class="info-value">高级前端工程师/前端架构师</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">联系电话</span>
+                        <a href="tel:13800138000" class="info-value contact-link">
+                            <i class="fas fa-phone"></i> 138****8000
+                        </a>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">电子邮箱</span>
+                        <a href="mailto:frontend.dev@example.com" class="info-value contact-link">
+                            <i class="fas fa-envelope"></i> frontend.dev@example.com
+                        </a>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">GitHub</span>
+                        <a href="https://github.com/example-frontend" target="_blank" class="info-value contact-link">
+                            <i class="fab fa-github"></i> github.com/example-frontend
+                        </a>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">技术博客</span>
+                        <a href="https://blog.frontend-tech.com" target="_blank" class="info-value contact-link">
+                            <i class="fas fa-blog"></i> blog.frontend-tech.com
+                        </a>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">所在地</span>
+                        <span class="info-value">北京·海淀区</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 技术架构 -->
+            <div class="info-section">
+                <h3 class="section-title">
+                    <i class="fas fa-layer-group"></i>
+                    技术架构
+                </h3>
+
+                <div class="tech-depth">
+                    <div class="depth-item">
+                        <div class="depth-header">
+                            <i class="fas fa-star"></i>
+                            <span>核心专精</span>
+                            <span class="depth-level">专家级</span>
+                        </div>
+                        <div class="depth-content">
+                            <div class="tech-pill">Vue 3生态</div>
+                            <div class="tech-pill">TypeScript</div>
+                            <div class="tech-pill">前端工程化</div>
+                            <div class="tech-pill">性能优化体系</div>
+                        </div>
+                    </div>
+
+                    <div class="depth-item">
+                        <div class="depth-header">
+                            <i class="fas fa-check-circle"></i>
+                            <span>熟练应用</span>
+                            <span class="depth-level">熟练级</span>
+                        </div>
+                        <div class="depth-content">
+                            <div class="tech-pill">React + Hooks</div>
+                            <div class="tech-pill">微前端架构</div>
+                            <div class="tech-pill">Node.js全栈</div>
+                            <div class="tech-pill">数据可视化</div>
+                        </div>
+                    </div>
+
+                    <div class="depth-item">
+                        <div class="depth-header">
+                            <i class="fas fa-eye"></i>
+                            <span>关注了解</span>
+                            <span class="depth-level">了解级</span>
+                        </div>
+                        <div class="depth-content">
+                            <div class="tech-pill">React Native</div>
+                            <div class="tech-pill">Flutter</div>
+                            <div class="tech-pill">WebAssembly</div>
+                            <div class="tech-pill">Serverless</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 工作经历 - 移到左侧 -->
+            <div class="info-section">
+                <h3 class="section-title">
+                    <i class="fas fa-briefcase"></i>
+                    工作经历
+                </h3>
+                <div class="work-timeline" id="workExperience">
+                    <!-- 工作经历将通过JS动态生成 -->
+                </div>
+            </div>
+
+            <!-- 技术亮点 -->
+            <div class="info-section">
+                <h3 class="section-title">
+                    <i class="fas fa-bolt"></i>
+                    技术亮点
+                </h3>
+                <div class="highlights">
+                    <div class="highlight-item">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <span>性能优化专家 - 首屏加载优化56%+</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-sitemap"></i>
+                        <span>微前端架构 - 落地3个大型项目</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-chart-line"></i>
+                        <span>工程化建设 - 团队效率提升40%</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-users"></i>
+                        <span>团队管理 - 10人前端团队技术指导</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- 右侧主要内容 -->
+    <main class="main-content">
+        <!-- 核心项目经历 -->
+        <section class="content-section">
+            <div class="section-header">
+                <h2>
+                    <i class="fas fa-trophy"></i>
+                    核心项目经历
+                    <span class="section-subtitle">(深度参与，体现技术架构能力)</span>
+                </h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid" id="coreProjects">
+                <!-- 核心项目将通过JS动态生成 -->
+            </div>
+        </section>
+
+        <!-- 其他项目经历 -->
+        <section class="content-section">
+            <div class="section-header">
+                <h2>
+                    <i class="fas fa-code-branch"></i>
+                    项目经历
+                    <span class="section-subtitle">(展示技术广度与多样业务场景)</span>
+                </h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid compact" id="otherProjects">
+                <!-- 其他项目将通过JS动态生成 -->
+            </div>
+        </section>
+    </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
